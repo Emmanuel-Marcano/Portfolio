@@ -36,6 +36,7 @@ body{
     position: relative;
     overflow-x: hidden;
     width: 100%;
+    color: #00252E;  
 }
 
 li{
@@ -72,7 +73,7 @@ a {
 }
 
 
-header::before{
+/* header::before{
     content: "";
     position: absolute;
     display: block;
@@ -84,7 +85,7 @@ header::before{
     background-color: var(--background-waves);
     z-index: -1;
     transform: rotate(-0.08turn);
-}
+} */
 
 
 header{
@@ -185,7 +186,7 @@ nav ul li:last-child {
    height: calc(100% - 77px);
    min-height: calc(100% - 77px);
    padding: 0 0.8rem;
-   color: #00252E;
+   /* color: #00252E; */
 }
 
 .showcase-text{
@@ -284,15 +285,47 @@ nav ul li:last-child {
 
 /*********************************** About me ********************************/
 
-.about-section{
-    /* gap: 50px; */
-
-    /* padding: 100px 0; */
+.section-header{
+    text-align: center;
+    margin: 5px 0;
 }
+
+.section-header h1{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.section-header p{
+    color: #748492;
+}
+
+.section-header::after{
+    content: " ";
+    background-color: #0082FA;
+    width: 65px;
+    height: 2px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+
+.about-text h4{
+    /* color: #203850;   */
+    font-size: 22px;
+}
+
+.about-text p{
+    color: #748492;
+
+}
+
+
 
 
 .about-image{
     width: 300px;
+    height: 400px;
     /* border-left: 1px solid black; */
     margin: 0 auto;
    
@@ -306,8 +339,8 @@ nav ul li:last-child {
 
 
 .about-svg{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-left: 1px solid lightgray;
     margin-left: 4px;
     padding-left: 35px;
@@ -358,12 +391,149 @@ nav ul li:last-child {
 }
 
 
+#right-hand{
+    animation: right-hand .8s infinite alternate;
+    /* animation-duration: alternate; */
+    /* animation-delay: revert; */
+    /* animation-timing-function: cubic-bezier(0.2, 2, 0.8, 2); */
+
+
+}
+
+
+
+#rectangle-1{
+
+    animation: rectangle-1 .5s ease-out infinite alternate;
+
+
+}
+#rectangle-4{
+
+    animation: rectangle-4 5s ease-out infinite alternate;
+}
+#rectangle-3{
+
+    animation: rectangle-3 3s ease-out infinite alternate;
+
+
+}
+#rectangle-2{
+
+    animation: rectangle-2 2s ease-out infinite alternate;
+
+
+}
+
+
+@keyframes right-hand {
+
+    from{
+
+        transform: translateX(0);
+
+    }
+
+    to{
+
+        transform: translateX(10px);
+    }
+}
+
+@keyframes rectangle-1{
+
+    from{
+        fill: #0082FA;
+
+
+    }
+
+    to{
+        fill: #748492;
+        border-radius: 20px;
+
+
+    }
+
+
+
+
+}
+@keyframes rectangle-4{
+
+    from{
+        fill: #0082FA;
+        transform: translateX(0);
+
+
+    }
+
+    to{
+        fill: #748492;
+        transform: translateX(30px);
+        
+
+
+    }
+
+
+
+
+}
+@keyframes rectangle-3{
+
+    from{
+        fill: #ff5c5c;
+        transform: translateX(0);
+
+
+    }
+
+    to{
+        fill: #0082FA;
+        transform: translateX(-30px);
+        
+
+
+    }
+
+
+
+
+}
+@keyframes rectangle-2{
+
+    from{
+        fill: #ff5c5c;
+        transform: translateX(0);
+
+
+    }
+
+    to{
+        fill: #a10a8143;
+        transform: translateX(20px);
+        
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
 
 /*********************************** Tech Stack ********************************/
 
 
 
 .tech-stack-area {
+    padding: 100px 40px;
     height: 500px;
     background-color: #fff;
 }
@@ -394,8 +564,9 @@ nav ul li:last-child {
 
 .tech-stack-header{
     font-weight: 700;
-    font-size: 25px;
-    color: #203850;    
+    font-size: 22px;
+    color: #00252E;
+    /* color: #203850;     */
 }
 
 .tech-stack-text p{

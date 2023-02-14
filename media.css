@@ -42,7 +42,7 @@ nav ul li:nth-child(4) {
 }
 
 nav ul li:last-child {
-    background-color:hsl(0, 100%, 68%);
+    background-color:#ff5c5c;
     color: white;
     font-size: 18px;
     padding: .2em 0.9em;
@@ -121,10 +121,10 @@ header::before {
     
 }
 
-.about-section{
+.about-me-grid{
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1.1fr;
+    /* gap: 20px; */
     padding: 40px;
 }
 
