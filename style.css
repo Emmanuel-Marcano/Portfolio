@@ -30,7 +30,7 @@ html{
 
 body{
     font-family: 'lato', sans-serif;
-    background-color: white;
+    background-color: var(--primary-color);
     line-height: 1.5;
     height: 100%;
     position: relative;
@@ -115,7 +115,7 @@ nav ul {
 .mobile-menu{
     cursor: pointer;
     border: none;
-    background-color: var(--primary-color);
+    background-color: #f6f9fc;
 }
 
 .mobile-menu span{
@@ -287,7 +287,7 @@ nav ul li:last-child {
 
 .section-header{
     text-align: center;
-    margin: 5px 0;
+    margin-top: 80px;
 }
 
 .section-header h1{
@@ -302,11 +302,12 @@ nav ul li:last-child {
 .section-header::after{
     content: " ";
     background-color: #0082FA;
-    width: 65px;
+    width:80px;
     height: 2px;
     display: block;
     margin: 0px auto;
     margin-top: 10px;
+  
 }
 
 
@@ -393,47 +394,29 @@ nav ul li:last-child {
 
 #right-hand{
     animation: right-hand .8s infinite alternate;
-    /* animation-duration: alternate; */
-    /* animation-delay: revert; */
-    /* animation-timing-function: cubic-bezier(0.2, 2, 0.8, 2); */
-
-
 }
-
-
 
 #rectangle-1{
-
     animation: rectangle-1 .5s ease-out infinite alternate;
-
-
 }
-#rectangle-4{
 
+#rectangle-4{
     animation: rectangle-4 5s ease-out infinite alternate;
 }
+
 #rectangle-3{
-
     animation: rectangle-3 3s ease-out infinite alternate;
-
-
 }
+
 #rectangle-2{
-
     animation: rectangle-2 2s ease-out infinite alternate;
-
-
 }
 
 
 @keyframes right-hand {
-
     from{
-
         transform: translateX(0);
-
     }
-
     to{
 
         transform: translateX(10px);
@@ -441,86 +424,50 @@ nav ul li:last-child {
 }
 
 @keyframes rectangle-1{
-
     from{
         fill: #0082FA;
-
-
     }
 
     to{
         fill: #748492;
         border-radius: 20px;
-
-
     }
-
-
-
-
 }
+
 @keyframes rectangle-4{
 
     from{
         fill: #0082FA;
         transform: translateX(0);
-
-
     }
 
     to{
         fill: #748492;
         transform: translateX(30px);
-        
-
-
     }
-
-
-
-
 }
-@keyframes rectangle-3{
 
+@keyframes rectangle-3{
     from{
         fill: #ff5c5c;
         transform: translateX(0);
-
-
     }
 
     to{
         fill: #0082FA;
         transform: translateX(-30px);
-        
-
-
     }
-
-
-
-
 }
-@keyframes rectangle-2{
 
+@keyframes rectangle-2{
     from{
         fill: #ff5c5c;
         transform: translateX(0);
-
-
     }
-
     to{
         fill: #a10a8143;
         transform: translateX(20px);
-        
-
-
     }
-
-
-
-
 }
 
 
