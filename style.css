@@ -636,7 +636,9 @@ nav ul li:last-child {
 .project-box{
     position: relative;
     cursor: pointer;
-   
+    
+    
+  
     
 }
 
@@ -644,21 +646,27 @@ nav ul li:last-child {
     position: absolute;
     text-transform: uppercase;
     font-weight: 700;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     font-style: italic;
-    opacity: 0;
     color: white;
-    top: 50%; 
-    left: 35%; 
     font-size: 20px;
-    transition: .5s ease;
-    transform: translateY(10px);
+    
+}
+
+.project-name .btn{
+    margin-top: 10px;
+    font-size: 12px;
+    /* background-color: #0082FA; */
 }
 
 
-.project-box:hover .project-name{
-    opacity: 1;
-    transform: translateY(0);
-}
 
 
 /*********************************** Contact********************************/
