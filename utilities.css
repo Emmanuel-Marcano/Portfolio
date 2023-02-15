@@ -29,8 +29,6 @@
     flex-direction: column-reverse;
     justify-content: space-evenly;
     height: 100%;
-   
-   
 }
 
 .flex-center{
@@ -39,7 +37,6 @@
     flex-direction: column;
     height: 100%;
     justify-content: space-evenly;
-
 }
 
 

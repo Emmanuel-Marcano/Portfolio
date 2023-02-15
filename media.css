@@ -20,7 +20,7 @@
 nav{
     position: static;
     width: auto;
-    background-color: white;
+    background-color: #f6f9fc; ;
     padding: 0;
     margin: 0;
     border-radius: 0;
@@ -70,10 +70,6 @@ header::before {
 
 
 
-.name{
-    font-size: 21px;
-}
-
 .showcase h1{
     font-size: 50px;
     font-weight: 700;
@@ -87,7 +83,7 @@ header::before {
     font-size: 16px;
 }
 
-.live-projects{
+.btn{
     font-size: 16px;
 }
 
