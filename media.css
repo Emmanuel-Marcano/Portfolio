@@ -124,5 +124,18 @@ header::before {
     padding: 40px;
 }
 
+.form{
+    max-width: 800px;
+    margin: 0 auto;
+  
+     /* margin: 0 auto;
+     padding: 0 5px; */
+    /* border: 1px solid black;  */
+}
+
+.grid-form{
+    gap: 30px;
+}
 
 }
+

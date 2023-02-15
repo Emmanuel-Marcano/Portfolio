@@ -648,7 +648,7 @@ nav ul li:last-child {
     opacity: 0;
     color: white;
     top: 50%; 
-    left: 30%; 
+    left: 35%; 
     font-size: 20px;
     transition: .5s ease;
     transform: translateY(10px);
@@ -665,12 +665,13 @@ nav ul li:last-child {
 
 .form{
     max-width: 800px;
-     margin: 0 auto;
-     padding: 0 10px;
+     margin: 0 auto; 
+     padding: 0 5px;
     /* border: 1px solid black;  */
 }
 
-.flex-form{
+.grid-form{
+  
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -692,11 +693,9 @@ nav ul li:last-child {
 }
 
 .input{
-    /* padding: 5px 0; */
-    /* font-size: 20px; */
     background-color: transparent;
     border: 1px solid lightgray;
-    height: 50px;
+    height: 45px;
 }
 
 input:nth-child(3){
@@ -708,12 +707,21 @@ textarea{
     border: 1px solid lightgray;
 }
 
-/* .flex-form > *{
-    flex-grow: 1;
-    flex-basis: ;
-} */
 
 
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 
 
