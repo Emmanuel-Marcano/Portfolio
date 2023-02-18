@@ -38,5 +38,19 @@ hiddenElements.forEach((el) => {
 
 
 
+let fixedbtn = document.querySelector(".grab")
+  
+fixedbtn.addEventListener("click", function(){
+  fixedbtn.classList.add("contact-fixed")
+
+
+
+})
+
+
+  if (document.body.scrollTop > 20) {
+    fixedbtn.classList.add("contact-fixed")
+  } 
+
 
 

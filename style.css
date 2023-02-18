@@ -25,6 +25,7 @@ html{
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 
@@ -106,6 +107,7 @@ header{
 }
 
 nav {
+   
     position: absolute;
     top: -100vh;
     background-color: #fff;
@@ -248,10 +250,11 @@ nav ul li:last-child {
 
 
 .btn{
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 8px 20px;
     font-weight: 700;
     cursor: pointer;
+    box-shadow: 0px 15px 20px rgba(143, 146, 145, 0.4);
     font-size: 12px;
 }
 
@@ -259,30 +262,36 @@ nav ul li:last-child {
     border: none;
     background-color: var(--secondary-color);
     color: white;
+    transition: transform .2s ease-in-out;
 }
 
 .btn--light{
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
-    transition: .2s ease-in-out;
     
+    
+}
+
+.btn--dark:hover{
+    transform: translateY(-3px);
+  
+
 }
 
 .btn--light:hover{
     background-color: var(--secondary-color);
     color: white;
-
-
+    transition: .2s ease-in-out;
 }
-
-
-
 
 
 
 
 
 /*********************************** About me ********************************/
+
+
+
 
 .section-header{
     text-align: center;
@@ -685,7 +694,6 @@ nav ul li:last-child {
 .form .btn{
     margin: 30px auto;
     display: block;
-    border-radius: 0;
     font-size: 16px;
     font-weight: 500;
     padding-top: 12px ;
@@ -734,3 +742,22 @@ textarea{
     color:#f6f9fc;
     padding: 40px 0px;
 }
+
+
+
+/* .grab{
+    transition: inset 3s ease;
+}
+
+
+.contact-fixed{
+    
+    position: fixed;
+    inset: auto 2rem 2rem auto;
+    padding: 10px;
+    background-color: #0082FA;
+    border-radius: 50%;
+
+
+
+} */
